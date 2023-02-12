@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class MouseController : MonoBehaviour
 {
+    public GameObject Tower;
 
     public MapMaker mapMaker;
     private Vector3 curPos;
@@ -39,6 +42,18 @@ public class MouseController : MonoBehaviour
             }
             transform.position = curPos;
             prevPos = curPos;
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if (mapMaker.gameTiles[cellLocation.x, cellLocation.y].buildable == true)
+            {
+                Instantiate(Tower, new Vector3(curPos.x, curPos.y, curPos.z), Quaternion.identity);
+            }
+            else
+            {
+                Debug.Log("You can't build there!");
+            }
         }
     }
 
