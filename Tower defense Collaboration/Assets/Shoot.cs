@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Threading;
 using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private int range = 10;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(0, 0, 100 * Time.deltaTime);
     }
 }
