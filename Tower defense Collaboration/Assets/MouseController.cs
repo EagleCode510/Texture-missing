@@ -49,6 +49,7 @@ public class MouseController : MonoBehaviour
             if (mapMaker.gameTiles[cellLocation.x, cellLocation.y].buildable == true)
             {
                 Instantiate(Tower, new Vector3(curPos.x, curPos.y, curPos.z), Quaternion.identity);
+                mapMaker.gameTiles[cellLocation.x, cellLocation.y].buildable = false;
             }
             else
             {
