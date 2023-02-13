@@ -14,7 +14,7 @@ public class spawn : MonoBehaviour
 
     IEnumerator spawner()
     {
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(5f);
         Instantiate(monster, new Vector3(-0.97f, 2.49f, 0f), Quaternion.identity);
         Restart();
     }

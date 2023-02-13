@@ -127,7 +127,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8942503446321615886}
   - component: {fileID: 8942503446321615885}
-  - component: {fileID: 8942503446321615884}
   m_Layer: 0
   m_Name: TowerBarrel
   m_TagString: Untagged
@@ -202,15 +201,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8942503446321615884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8942503446321615887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb6df90629302a4fa84b4c2b532c0c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

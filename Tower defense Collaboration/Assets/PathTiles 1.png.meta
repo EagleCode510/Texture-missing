@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ground_00
+      name: PathTiles 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,20 +125,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1246a5471032e97499a5d13cf39c2bd7
-      internalID: -11153186
+      spriteID: 74d7a1eb50ac6fb479ee698b903ecefb
+      internalID: -471950252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: road_00
+      name: PathTiles 1_1
       rect:
         serializedVersion: 2
         x: 512
@@ -146,20 +146,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9545d05b8c27120489a97e9d3f019aba
-      internalID: -748194098
+      spriteID: 6fe5f99b893ca224dbbf76ff5d588368
+      internalID: 844936610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: road_01
+      name: PathTiles 1_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -167,20 +167,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8589a9390c8a1be458e2769ba3836f6f
-      internalID: -194110077
+      spriteID: eb2f91f34cd6a814e8e0046e4102a726
+      internalID: 1329043952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: road_02
+      name: PathTiles 1_3
       rect:
         serializedVersion: 2
         x: 0
@@ -188,41 +188,41 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 047c2f02995d6e64a96be1d5e266d940
-      internalID: 1527710525
+      spriteID: 1618088502f1e6c4393d46375d018e6d
+      internalID: -827718809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: road_03
+      name: PathTiles 1_4
       rect:
         serializedVersion: 2
-        x: 509
+        x: 512
         y: 1024
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcae27c92d2a52a4cad16b6deae3d578
-      internalID: -1498820397
+      spriteID: 5da396752b737e149b9a41ad104dec7d
+      internalID: 1908924583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: road_04
+      name: PathTiles 1_5
       rect:
         serializedVersion: 2
         x: 1024
@@ -230,62 +230,62 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 626383fb2a46a7341b80a51fce30ac50
-      internalID: 557743589
+      spriteID: e2b935b49aaa6724faff828a656f4af9
+      internalID: -374228102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: road_05
+      name: PathTiles 1_6
       rect:
         serializedVersion: 2
-        x: 3
-        y: 509
+        x: 0
+        y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39cad36f9f6391f4daac7b599be4dbb8
-      internalID: 1298057062
+      spriteID: 29c71b5fb7be1a54592763c3154f5dc3
+      internalID: 744587129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: road_06
+      name: PathTiles 1_7
       rect:
         serializedVersion: 2
         x: 512
-        y: 515
+        y: 512
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84f921f76bf68304f9dfa8c24e1af051
-      internalID: -2105358047
+      spriteID: 5435fe94fa8083a4e8df6e954e7c2d38
+      internalID: -1086524004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: road_07
+      name: PathTiles 1_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -293,20 +293,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9034be6321796ec47badf6fd55babd8c
-      internalID: -1037267127
+      spriteID: 9b0fadbcc5df66d409b9795966970006
+      internalID: -1983090153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: road_08
+      name: PathTiles 1_9
       rect:
         serializedVersion: 2
         x: 0
@@ -314,20 +314,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3327ffb3608b5e64f838dc7117a40bcd
-      internalID: -1387662373
+      spriteID: 317197530b68c0449ae30b8b81b971e3
+      internalID: 1718798994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: road_09
+      name: PathTiles 1_10
       rect:
         serializedVersion: 2
         x: 512
@@ -335,20 +335,20 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c74265ee82bdb54ab0ecdb16cc8f47c
-      internalID: -831386775
+      spriteID: afe4d7598007faa41ac6f494a00f4f7d
+      internalID: 1471421501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: road_10
+      name: PathTiles 1_11
       rect:
         serializedVersion: 2
         x: 1024
@@ -356,14 +356,14 @@ TextureImporter:
         width: 512
         height: 512
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 839980fb6f7eaad46879a069caf86225
-      internalID: -850724548
+      spriteID: d580f57558602224da33f010c4e21c04
+      internalID: 1552419681
       vertices: []
       indices: 
       edges: []
@@ -379,18 +379,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      road_03: -1498820397
-      road_09: -831386775
-      ground_00: -11153186
-      road_00: -748194098
-      road_08: -1387662373
-      road_10: -850724548
-      road_05: 1298057062
-      road_06: -2105358047
-      road_04: 557743589
-      road_02: 1527710525
-      road_01: -194110077
-      road_07: -1037267127
+      PathTiles 1_1: 844936610
+      PathTiles 1_4: 1908924583
+      PathTiles 1_8: -1983090153
+      PathTiles 1_3: -827718809
+      PathTiles 1_10: 1471421501
+      PathTiles 1_9: 1718798994
+      PathTiles 1_11: 1552419681
+      PathTiles 1_2: 1329043952
+      PathTiles 1_6: 744587129
+      PathTiles 1_5: -374228102
+      PathTiles 1_0: -471950252
+      PathTiles 1_7: -1086524004
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
