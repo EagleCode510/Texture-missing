@@ -4,7 +4,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     public Transform target;
-    public float range = 15f;
+    public float range;
 
     void Update()
     {
@@ -13,6 +13,7 @@ public class Shoot : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, range);
     }
 }

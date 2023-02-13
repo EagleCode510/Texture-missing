@@ -313,6 +313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb6df90629302a4fa84b4c2b532c0c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  range: 15
 --- !u!1 &557018702
 GameObject:
   m_ObjectHideFlags: 0
@@ -2928,6 +2930,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster
       objectReference: {fileID: 0}
+    - target: {fileID: 6468600748323230960, guid: 352e14da1caeb074cb5bf19a1b0fa831, type: 3}
+      propertyPath: m_TagString
+      value: Monster
+      objectReference: {fileID: 0}
     - target: {fileID: 6468600748323230961, guid: 352e14da1caeb074cb5bf19a1b0fa831, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2981,17 +2987,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8942503445587250040, guid: 57860d21dac99284b9773f0000ef65ed, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8942503446130902278, guid: 57860d21dac99284b9773f0000ef65ed, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8942503446130902278, guid: 57860d21dac99284b9773f0000ef65ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 8942503446130902278, guid: 57860d21dac99284b9773f0000ef65ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6
+      value: 1.51
       objectReference: {fileID: 0}
     - target: {fileID: 8942503446130902278, guid: 57860d21dac99284b9773f0000ef65ed, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3028,6 +3038,14 @@ PrefabInstance:
     - target: {fileID: 8942503446130902279, guid: 57860d21dac99284b9773f0000ef65ed, type: 3}
       propertyPath: m_Name
       value: Tower
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942503446321615884, guid: 57860d21dac99284b9773f0000ef65ed, type: 3}
+      propertyPath: range
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942503446321615885, guid: 57860d21dac99284b9773f0000ef65ed, type: 3}
+      propertyPath: m_SortingOrder
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57860d21dac99284b9773f0000ef65ed, type: 3}
