@@ -6,6 +6,11 @@ public class Shoot : MonoBehaviour
     public Transform target;
     public float range;
 
+
+    void UpdateTarget()
+    {
+
+    }
     void Update()
     {
         

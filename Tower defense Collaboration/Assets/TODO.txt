@@ -1,0 +1,19 @@
+Finish Turret Prefab
+    Get tracking working
+    Settable Damage/Speed/Health/Cost
+    Shoot
+
+Finish Monster Prefab
+    Get it to take damage
+
+Build Health/Money Controler
+
+Organize our project, Comments on code
+
+STUFF TO DO AFTER THE ABOVE IS ALL DONE
+
+    Tower Upgrades
+    New towers (AoE Tower, Chain Lightning tower, Poison) so we can figure out how damage mechanics work
+    Ability to pause game
+    New Monsters (add resists?)
+    
