@@ -5,7 +5,7 @@ public class Shoot : MonoBehaviour
 {
     public Transform target;
     public float range;
-
+    public float rotationSpeed = 10f;
     public string enemyTag = "Enemy";
 
     public Transform partToRotate;
@@ -42,14 +42,21 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
+
         if (target == null)
             return;
 
-        Vector3 dir = target.position - transform.position;
-        Quaternion lookRotation = Quaternion.LookRotation(dir);
-        Vector3 rotation = lookRotation.eulerAngles;
-        partToRotate.rotation = Quaternion.Euler (0f, 0f, rotation.z);
+        Vector3 targ = target.transform.position;
+        targ.z = 0f;
 
+        Vector3 objectPos = transform.position;
+        targ.x = targ.x - objectPos.x;
+        targ.y = targ.y - objectPos.y;
+
+        float curRotation = Mathf.Atan2(objectPos.y, objectPos.x);
+        float lookRotation = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
+
+        partToRotate.rotation = Quaternion.Euler(new Vector3(0, 0, lookRotation));
     }
 
     void OnDrawGizmosSelected()
