@@ -2,6 +2,7 @@ Finish Turret Prefab
     Get tracking working
     Settable Damage/Speed/Health/Cost
     Shoot
+    Fix the ability to place towers on a path.
 
 Finish Monster Prefab
     Get it to take damage

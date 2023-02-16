@@ -3,12 +3,23 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
+
+    [Header ("Attributes")]
+
     public float range;
-    public float rotationSpeed = 10f;
+    public float fireRate = 1f;
+    private float fireCountdown = 0f;
+
+    [Header("Unity Setup Fields")]
+
     public string enemyTag = "Enemy";
 
     public Transform partToRotate;
+    public float rotationSpeed = 10f;
+
+    public GameObject bulletPrefab;
+    public Transform firePoint;
 
     void Start()
     {
@@ -56,7 +67,30 @@ public class Shoot : MonoBehaviour
         float curRotation = Mathf.Atan2(objectPos.y, objectPos.x);
         float lookRotation = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
 
+
         partToRotate.rotation = Quaternion.Euler(new Vector3(0, 0, lookRotation));
+
+
+        if (fireCountdown <= 0f)
+
+        {
+            Fire();
+            fireCountdown = 1f / fireRate;
+        }
+
+        fireCountdown -= Time.deltaTime;
+
+    }
+
+    void Fire()
+    {
+        GameObject bulletGO  = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+
+        if (bullet != null)
+        {
+            bullet.Seek(target);
+        }
     }
 
     void OnDrawGizmosSelected()
