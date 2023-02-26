@@ -97,5 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5245b8a1dd1e0904195695da98600317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liver: {fileID: 1124100087395192870, guid: 6600c2df7c25d5b469e5082d4e433256, type: 3}
+  hp: 100
   speed: 3
   health: 20

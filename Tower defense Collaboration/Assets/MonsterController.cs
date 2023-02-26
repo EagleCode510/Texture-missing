@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static System.Net.Mime.MediaTypeNames;
 
 public class MonsterController : MonoBehaviour
 {
+    public GameObject liver;
     public float speed;
     public int health = 20;
     private Waypoints wpoints;
@@ -25,6 +27,7 @@ public class MonsterController : MonoBehaviour
             if(waypointIndex >= wpoints.waypoints.Length)
             {
                 Destroy(gameObject);
+                liver.GetComponent<LifeManager>().hp -= 1; 
             }
         }
     }
