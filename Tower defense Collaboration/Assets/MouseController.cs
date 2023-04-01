@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class MouseController : MonoBehaviour
 {
+    public float RemoveMoneyx;
+
     public GameObject Tower;
 
     public MapMaker mapMaker;
@@ -26,6 +28,7 @@ public class MouseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        RemoveMoneyx = 0f;
         curPos = GetMouseGridPosition();
         Vector3Int cellLocation = (mapMaker.tilemap.WorldToCell(Camera.main.ScreenToWorldPoint(Input.mousePosition)));
         int x = cellLocation.x;
@@ -48,8 +51,17 @@ public class MouseController : MonoBehaviour
         {
             if (mapMaker.gameTiles[cellLocation.x, cellLocation.y].buildable == true)
             {
-                Instantiate(Tower, new Vector3(curPos.x, curPos.y, curPos.z), Quaternion.identity);
-                mapMaker.gameTiles[cellLocation.x, cellLocation.y].buildable = false;
+                FindCost();
+                float dollars = GameObject.FindWithTag("MoneyController").GetComponent<MoneyManager>().Money;
+                if (dollars >= RemoveMoneyx)
+                {
+                    Instantiate(Tower, new Vector3(curPos.x, curPos.y, curPos.z), Quaternion.identity);
+                    mapMaker.gameTiles[cellLocation.x, cellLocation.y].buildable = false;
+                }
+                else
+                {
+                    RemoveMoneyx = 0f;
+                }
             }
             else
             {
@@ -66,5 +78,10 @@ public class MouseController : MonoBehaviour
         mouseWorldPos.y = Mathf.Round(mouseWorldPos.y - 0.5f) + .5f;
         mouseWorldPos.x = Mathf.Round(mouseWorldPos.x - 0.5f) + .5f;
         return mouseWorldPos;
+    }
+
+    void FindCost()
+    {
+        RemoveMoneyx = GameObject.FindWithTag("Tower").GetComponent < CostsBasetower > ().BaseTowerCost;
     }
 }
