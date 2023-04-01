@@ -7,6 +7,9 @@ TagManager:
   - Waypoints
   - Monster
   - Enemy
+  - Tower
+  - Mouse
+  - MoneyController
   layers:
   - Default
   - TransparentFX
@@ -14,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Post Processing
   - 
   - 
   - 

@@ -26,8 +26,9 @@ public class MonsterController : MonoBehaviour
             waypointIndex++;
             if(waypointIndex >= wpoints.waypoints.Length)
             {
+                liver.GetComponent<LifeManager>().ChangeLivesNegative(1);
                 Destroy(gameObject);
-                liver.GetComponent<LifeManager>().hp -= 1; 
+                
             }
         }
     }
@@ -38,6 +39,7 @@ public class MonsterController : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            GameObject.FindWithTag("MoneyController").GetComponent<MoneyManager>().Money += 10;
             return;
         }
     }

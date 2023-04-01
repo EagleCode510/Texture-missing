@@ -11,11 +11,16 @@ public class LifeManager : MonoBehaviour
 
     void Start()
     {
-        hp = 100;
+        hp = 10;
     }
 
     void Update()
     {
         lives.text = "Lives: " + hp.ToString() + " ";
+    }
+
+    public void ChangeLivesNegative(int damage)
+    {
+        hp -= damage;
     }
 }

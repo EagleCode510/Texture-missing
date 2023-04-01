@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 82221993}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: firePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,6 +31,37 @@ Transform:
   m_Father: {fileID: 8942503446321615886}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2426526284473156644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5038278996313885708}
+  m_Layer: 6
+  m_Name: firePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5038278996313885708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426526284473156644}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.405, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8942503446321615886}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8942503445587250042
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8942503445587250041}
   - component: {fileID: 8942503445587250040}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TowerBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,9 +156,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8942503446130902278}
   - component: {fileID: 8321826277042538589}
-  m_Layer: 0
+  - component: {fileID: 517514510754095104}
+  m_Layer: 6
   m_Name: Tower
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,7 +199,20 @@ MonoBehaviour:
   partToRotate: {fileID: 8942503446321615886}
   rotationSpeed: 10
   bulletPrefab: {fileID: 4860076810387057740, guid: e29349ba16d1424439468a9f6902461b, type: 3}
-  firePoint: {fileID: 82221993}
+  firePoint: {fileID: 5038278996313885708}
+--- !u!114 &517514510754095104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8942503446130902279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb1019529e18e34f8f321a8ee318b95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseTowerCost: 50
 --- !u!1 &8942503446321615887
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8942503446321615886}
   - component: {fileID: 8942503446321615885}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TowerBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,6 +243,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 82221993}
+  - {fileID: 5038278996313885708}
   m_Father: {fileID: 8942503446130902278}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
