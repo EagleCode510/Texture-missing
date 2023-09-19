@@ -98,5 +98,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   liver: {fileID: 1124100087395192870, guid: 6600c2df7c25d5b469e5082d4e433256, type: 3}
-  speed: 3
+  speed: 6
   health: 20
