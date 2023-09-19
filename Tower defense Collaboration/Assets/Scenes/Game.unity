@@ -3705,6 +3705,10 @@ PrefabInstance:
       value: LifeManage
       objectReference: {fileID: 0}
     - target: {fileID: 1124100087395192871, guid: 6600c2df7c25d5b469e5082d4e433256, type: 3}
+      propertyPath: hp
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124100087395192871, guid: 6600c2df7c25d5b469e5082d4e433256, type: 3}
       propertyPath: lives
       value: 
       objectReference: {fileID: 367068640}
